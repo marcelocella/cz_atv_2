@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | ONG Cruzeiro do Sul</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">💙 Voluntários</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="projetos.html" class="active">Projetos ▼</a> 
+                    <ul class="dropdown-menu">
+                        <li><a href="#adote">Adoção</a></li>
+                        <li><a href="#doe">Doações</a></li>
+                        <li><a href="#voluntarie">Voluntariado</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+                <li><a href="index.html#contato">Contato</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                <h1>Faça a Diferença. Junte-se a um Projeto.</h1>
+                <p>Nossos projetos focam em resgate, reabilitação e bem-estar de cães e gatos de rua. Sua ajuda é fundamental para cada patinha que salvamos.</p>
+                <a href="#projetos" class="btn-primary">Ver Nossos Projetos</a>
+            </div>
+        </section>
+
+        <section class="container" id="projetos" style="padding-top: var(--spacing-lg);">
+            <h2>Três Pilares da Nossa Ação</h2>
+            <p>Clique abaixo para saber como você pode ser um Anjo de Quatro Patas.</p>
+            
+            <div class="grid-12-cols" style="margin-top: var(--spacing-lg);">
+                <div class="card col-span-12 col-md-4">
+                    <div class="card-body">
+                        <h3>🐶 Mais de 500 Vidas Salvas</h3>
+                        <p>Graças à comunidade e aos voluntários, resgatamos, tratamos e encontramos um lar para mais de 500 animais nos últimos 5 anos.</p>
+                    </div>
+                </div>
+                <div class="card col-span-12 col-md-4">
+                    <div class="card-body">
+                        <h3>💰 Fundo de Saúde Animal</h3>
+                        <p>Mantemos um fundo ativo para custear cirurgias de emergência e vacinação de filhotes resgatados.</p>
+                    </div>
+                </div>
+                <div class="card col-span-12 col-md-4">
+                    <div class="card-body">
+                        <h3>🤝 Seu Tempo Vale Ouro</h3>
+                        <p>Voluntários dedicados ajudam na socialização, passeios e cuidados diários. Não há projeto sem você!</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: var(--spacing-xl) 0;">
+            <section id="adote">
+                <h2>1. Projeto Adoção Responsável</h2>
+                <div class="destaque-section" style="flex-direction: row;">
+                    <div class="destaque-text">
+                        <p>Nosso maior objetivo é encontrar lares seguros e amorosos. O processo de adoção é rigoroso e envolve entrevista, visita domiciliar e acompanhamento pós-adoção.</p>
+                        <ul>
+                            <li>Passo 1: Conheça os animais disponíveis em nossa galeria.</li>
+                            <li>Passo 2: Preencha o formulário de pré-adoção no link abaixo.</li>
+                            <li>Passo 3: Receba a visita da nossa equipe para avaliação.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="openModal('adoption-modal')" style="margin-top: var(--spacing-md);">Ver Animais para Adoção</a>
+                    </div>
+                    <div class="destaque-image">
+                        
+
+
+                        <img src="imagem/gatoecao.jpg" alt="Filhote de cachorro e gato.">
+                    </div>
+                </div>
+            </section>
+            
+            <hr style="margin: var(--spacing-xl) 0;">
+            <section id="doe">
+                <h2>2. Campanha Permanente de Doações</h2>
+                <div class="destaque-section" style="flex-direction: row-reverse;">
+                    <div class="destaque-text">
+                        <p>Cada centavo, cada quilo de ração e cada cobertor faz a diferença na vida dos nossos resgatados. Temos várias formas de você contribuir:</p>
+                        <ul>
+                            <li>Doação Financeira: Via PIX ou Boleto (para cobrir custos veterinários).</li>
+                            <li>Doação de Itens: Ração, medicamentos, jornais, coleiras e caminhas.</li>
+                            <li>Apadrinhamento: Ajude a cobrir os custos fixos de um animal específico.</li>
+                        </ul>
+                        <a href="cadastro.html#doar" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Quero Doar Agora</a>
+                    </div>
+                    <div class="destaque-image">
+                         
+                        <img src="imagem/food.png" alt="Pilha de sacos de ração e cobertores.">
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin: var(--spacing-xl) 0;">
+            <section id="voluntarie">
+                <h2>3. Voluntariado e Resgate</h2>
+                <div class="destaque-section" style="flex-direction: row;">
+                    <div class="destaque-text">
+                        <p>O voluntário é o coração da ONG. Você pode nos ajudar com tarefas operacionais, administrativas ou especializadas. Veja as principais frentes:</p>
+                        <ul>
+                            <li>Cuidados Diários: Alimentar, limpar canis e socializar os animais.</li>
+                            <li>Eventos: Organizar feiras de adoção e campanhas de arrecadação.</li>
+                            <li>Logística: Ajudar no transporte de animais para o veterinário ou resgates.</li>
+                        </ul>
+                        <a href="cadastro.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Candidate-se a Voluntário</a>
+                    </div>
+                    <div class="destaque-image">
+
+                        <img src="imagem/play.jpg" alt="Pessoa voluntária.">
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <div id="adoption-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('adoption-modal')">&times;</span>
+            <h2>🐾 Adote um Amigo: Galeria Disponível</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-card">
+                    <img src="imagem/pedro-fiapo.jpg" alt="Cão Fiapo de manga, Perdo Fiapo" class="gallery-img">
+                    <h3>Perdo Fiapo</h3>
+                    <p>Cachorro, 2 anos. Dócil e brincalhão. Necessita de espaço.</p>
+                    <span class="badge" style="background-color: var(--color-primary);">Pequeno Porte</span>
+                </div>
+                
+                <div class="gallery-card">
+                    <img src="imagem/mia.jpg" alt="Gato preto/branco, Mia" class="gallery-img">
+                    <h3>Mia</h3>
+                    <p>Gata, 1 ano. Calma, ideal para apartamentos. Adora carinho.</p>
+                    <span class="badge" style="background-color: var(--color-primary);">Pequeno Porte</span>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="imagem/luna.jpg" alt="Gato cinza, Luna" class="gallery-img">
+                    <h3>Luna</h3>
+                    <p>Gata, 10 anos. Uma senhora bem tranquila.</p>
+                    <span class="badge" style="background-color: var(--color-primary);">Pequeno Porte</span>
+                </div>
+
+
+                <div class="gallery-card">
+                    <img src="imagem/raio.jpg" alt="Cão Poodle, Raio" class="gallery-img">
+                    <h3>Raio</h3>
+                    <p>Cachorro fofinho que gosta de brincar na grama.</p>
+                    <span class="badge" style="background-color: var(--color-primary);">Pequeno Porte</span>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="imagem/rex.jpg" alt="Cão, Rex" class="gallery-img">
+                    <h3>Rex</h3>
+                    <p>Cachorro grande e protetor.</p>
+                    <span class="badge" style="background-color: var(--color-secondary);">Grande Porte</span>
+                </div>
+                
+                </div>
+            
+           
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 ONG Cruzeiro do Sul. Todos os direitos reservados.</p>
+        <p>Feito com ❤️ para transformar vidas</p>
+    </footer>
+
+    <script src="js/dropDown.js"></script>
+    <script src="js/projetos.js"></script>
+</body>
+</html>

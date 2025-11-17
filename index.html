@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ONG Cruzeiro do Sul - Início</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">💙 Voluntários</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li class="dropdown">
+                    <a href="projetos.html">Projetos ▼</a> 
+                    <ul class="dropdown-menu">
+                        <li><a href="projetos.html#adote">Adoção</a></li>
+                        <li><a href="projetos.html#doe">Doações</a></li>
+                        <li><a href="projetos.html#voluntarie">Voluntariado</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+                <li><a href="index.html#contato">Contato</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            
+            <img id="cat-animation" src="imagem/c1.png" alt="Animação de um gatinho saltando" class="cat-fixed">
+            <img id="gif-impacto" src="imagem/giphy.gif" alt="Animação de um gatinho saltando" class="gif-impacto-fixed">
+
+            <h1>Transforme Vidas com Voluntariado</h1>
+            <p>Somos uma organização dedicada à inclusão social e ao atendimento de famílias. Junte-se a nós e faça a diferença!</p>
+            <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
+        </div>
+    </section>
+
+        <br>
+        <section class="container" style="margin-bottom: var(--spacing-lg);">
+            <div class="destaque-section">
+                <div class="destaque-text">
+                    <h2>Mude uma Vida. Seja um Voluntário.</h2>
+                    <p>Milhares de animais nas ruas dependem da sua ajuda. A ONG Cruzeiro do Sul trabalha resgatando, reabilitando e encontrando lares seguros para cães e gatos.</p>
+                    <p>Seu tempo e sua doação são o combustível da nossa missão. Junte-se aos Anjos de Quatro Patas!</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <a href="cadastro.html" class="btn btn-primary" style="margin-right: var(--spacing-sm);">Seja Voluntário</a>
+                        <a href="projetos.html#doar" class="btn btn-secondary">Quero Doar</a>
+                    </div>
+                </div>
+                <div class="destaque-image">
+                    
+
+                    <img src="imagem/patas.jpg" alt="Pessoa abraçando um cachorro e um gato em um abrigo.">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+        <section class="container" style="margin-top: var(--spacing-lg);">
+            <h2>Projetos e Campanhas Atuais</h2>
+            
+            <div class="grid-12-cols" style="margin-top: var(--spacing-lg);">
+                
+                <article class="card col-span-12 col-md-6 col-lg-3">
+                    <img src="imagem/play.jpg" alt="Pessoas voluntárias cuidando de animais." class="card-image">
+                    <div class="card-body">
+                        <h3>Projeto Anjos de Patas</h3>
+                        <span class="badge" style="background-color: var(--color-primary);">Voluntariado</span>
+                        <p>Dedique algumas horas semanais para socializar, alimentar e dar carinho aos resgatados.</p>
+                        <div class="card-footer">
+                            <a href="cadastro.html" class="btn btn-primary">Inscreva-se</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card col-span-12 col-md-6 col-lg-3">
+                    <img src="imagem/racao.jpg" alt="Sacos de ração." class="card-image">
+                    <div class="card-body">
+                        <h3>Campanha Ração Fartura</h3>
+                        <span class="badge" style="background-color: var(--color-secondary);">Doação</span>
+                        <p>Nossa campanha permanente de arrecadação de ração para filhotes e animais idosos.</p>
+                        <div class="card-footer">
+                            <a href="projetos.html#doar" class="btn btn-secondary">Veja Pontos de Coleta</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card col-span-12 col-md-6 col-lg-3">
+                    <img src="imagem/smile.jpg" alt="Um filhote de cachorro sorrindo." class="card-image">
+                    <div class="card-body">
+                        <h3>Adote um Amigo</h3>
+                        <span class="badge" style="background-color: #03A9F4;">Adoção</span>
+                        <p>Veja os animais disponíveis para adoção responsável. Filtre por porte, idade e temperamento.</p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Quero Adotar</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card col-span-12 col-md-6 col-lg-3">
+                    <img src="imagem/cat.jpg" alt="Veterinário examinando um gato." class="card-image">
+                    <div class="card-body">
+                        <h3>Fundo Emergencial Cirúrgico</h3>
+                        <span class="badge" style="background-color: #F44336;">Emergência</span>
+                        <p>Doações específicas para custear cirurgias complexas e tratamentos de emergência.</p>
+                        <div class="card-footer">
+                            <a href="projetos.html#doar" class="btn btn-secondary">Doe Agora</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        
+        <hr>
+        <br>
+
+        <section class="container" id="contato" style="margin-top: var(--spacing-xl);">
+            <h2>Entre em Contato</h2>
+            <p>Tire suas dúvidas ou agende uma visita ao nosso abrigo.</p>
+            
+            <div class="grid-12-cols" style="margin-top: var(--spacing-md);">
+                
+                <div class="col-span-12 col-md-6">
+                    <h3>Nosso Abrigo</h3>
+                    <p><strong>Endereço:</strong> Rua da Esperança, 123 - Cidade Amiga/SP</p>
+                    <p><strong>Telefone:</strong> (99) 99999-9999</p>
+                    <p><strong>E-mail:</strong> contato@cruzeirodosul.org</p>
+                    <p>Visitas apenas com agendamento prévio.</p>
+                </div>
+                
+               <div class="col-span-12 col-md-6">
+                    <h3>Localização</h3>
+                    <div style="background-color: #eee; height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 6px;">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.825114099693!2d-70.18518302397175!3d-19.159131114769433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915033b06a552747%3A0x66f93c5b7425ce62!2sRuta%205%2068260%2C%20Camarones%2C%20Arica%20y%20Parinacota%2C%20Chile!5e0!3m2!1spt-BR!2sbr!4v1763174357081!5m2!1spt-BR!2sbr" 
+                        style="width: 100%; height: 100%; border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    <br>
+    <hr>
+    <br>
     
+    
+    <!-- Quem Somos -->
+    <section class="about-index container">
+        <h2>Quem Somos</h2>
+        <p>Somos uma organização sem fins lucrativos que atua no atendimento de famílias em inclusão social, promovendo dignidade, esperança e oportunidades para quem mais precisa.</p>
+        
+    </section>  
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Organização de Voluntários. Todos os direitos reservados.</p>
+     <p>Feito com &#10084;&#65039; para transformar vidas</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/dropDown.js"></script>
+    <script src="js/cat.js"></script>
 </body>
 </html>
